@@ -27,7 +27,7 @@ When a game is detected, Optimizer applies a set of tweaks based on your configu
 
 ## Setup
 
-1. Run `optimizer.exe` as administrator
+Run `optimizer.exe` as administrator
 
 On first run, config files are created at `%LOCALAPPDATA%\Optimizer\`.
 
