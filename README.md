@@ -25,9 +25,20 @@ When a game is detected, Optimizer applies a set of tweaks based on your configu
 
 ---
 
+## Requirements
+
+- Windows 10 or 11 (x64)
+- Administrator privileges
+- Visual Studio 2022, C++17
+
+---
+
 ## Setup
 
-Run `optimizer.exe` as administrator
+1. Clone the repo
+2. Open `optimizer.sln` in Visual Studio 2022
+3. Build in Release | x64
+4. Run `optimizer.exe` as administrator
 
 On first run, config files are created at `%LOCALAPPDATA%\Optimizer\`.
 
