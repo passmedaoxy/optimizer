@@ -16,7 +16,7 @@ current version is better and safer in every way: [get the latest release](https
 | [v1.4.2](https://github.com/passmedaoxy/optimizer/releases/tag/v1.4.2) | Feb 3, 2026 | The last Python version, first called Optimizer: commands, setup wizard, presets, closing apps, crash recovery, run on startup. |
 | [v2.6.5](https://github.com/passmedaoxy/optimizer/releases/tag/v2.6.5) | Mar 6, 2026 | The C++ rewrite, still a console app, with around 40 tweaks. A Debug build: needs Visual Studio's C++ tools to run. |
 
-Versions with 1.x are Python programs packed with PyInstaller, so antivirus often flags them by mistake.
+The 1.x versions are Python programs packed with PyInstaller, so antivirus often flags them by mistake.
 
 > **Only these builds survived.** Every other version from before 2.8.3 is lost for good.
 > These are the only early builds left. The versions in between, and anything else before 2.8.3, are lost to time.
