@@ -1,0 +1,10 @@
+## Which games they work with
+
+The early builds were made for my own PC, not for public use, so the first ones only work with certain games.
+
+| Version | Games |
+|---|---|
+| v1.0 | Only these 7, built in: Counter-Strike 2, VALORANT, Fortnite, Rust, Escape from Tarkov, Roblox, and Minecraft (the launcher and the Windows edition). |
+| v1.1 | None built in. It reads `games.json` in `%LOCALAPPDATA%\FPSOptimizer`, which starts empty, so you add games by hand (by exe name, like `"cs2.exe": { "timer": true }`). |
+| v1.4.2 | Any game you add: the setup wizard asks for its exe name (like `cs2.exe`), or use `addgame` later. |
+| v2.6.5 | Any game you add: the setup wizard asks for its exe name (like `cs2.exe`), or use `addgame` later. VALORANT gets special handling for its anti-cheat. |
