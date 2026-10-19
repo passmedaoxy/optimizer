@@ -10,7 +10,7 @@ Optimizer started as something I made just for myself: a small Python script tha
 
 v1.1 was the one me and my friends actually used day to day. It's where the hardcoded games went away: from then on, you added games yourself in JSON files, which was the only way it would find them. Everything from 1.1 to 1.4 was updates on top of that, making it work better and optimize more things.
 
-2.0 was a rewrite in C++, because that's when I wanted to go open source. It was, for a little while, before I went closed source.
+2.0 was a rewrite in C++, because that's when I wanted to go open source. It was, for a little while, before I went closed source. The rewrite also made it run so much better: C++ is far lighter and faster than Python, so the app itself barely took anything away from your games.
 
 3.0 was planned for a while before it happened. The idea came to me around 2.8.3, and 2.8.4 even had a test build with a UI: my own HTML design, built into the app. It barely worked, if it worked at all (you couldn't even close it with its own close button), so it's not in this archive. After a good day on it, I gave up and scrapped it for the time being.
 
