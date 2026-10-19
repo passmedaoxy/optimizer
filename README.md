@@ -18,4 +18,5 @@ current version is better and safer in every way: [get the latest release](https
 
 Versions with 1.x are Python programs packed with PyInstaller, so antivirus often flags them by mistake.
 
-***Any version before 2.8.3 are lost to time if they aren't up here
+> **Only these builds survived.** Every other version from before 2.8.3 is lost for good.
+> These are the only early builds left. The versions in between, and anything else before 2.8.3, are lost to time.
