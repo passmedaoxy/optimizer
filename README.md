@@ -9,7 +9,7 @@
   &nbsp;·&nbsp;
   <a href="https://github.com/passmedaoxy/optimizer/releases">All releases</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/passmedaoxy/optimizer/tree/archive">Archive of old builds</a>
+  <a href="https://github.com/passmedaoxy/optimizer-archive">Archive of old builds</a>
 </p>
 
 <p align="center">
@@ -20,25 +20,27 @@
 
 Optimizer sits in your tray and waits. When a game you've added starts, it applies the tweaks in your preset. When the game closes, it undoes every one of them and checks that each setting really went back. Your PC is only "optimized" while you're playing.
 
-There are 43 tweaks, and every one explains what it does for performance and what it costs. A few examples:
+There are 40 tweaks, and every one explains what it does for performance and what it costs. A few examples:
 
 - **CPU:** the game runs at high priority, cores stay awake, a finer system timer for steadier frame pacing, and background apps moved off the game's cores
 - **Memory:** cached memory freed when the game starts, and background apps give up RAM before the game does
-- **Network:** Nagle's algorithm off, the game's packets marked as high priority, and Wi-Fi background scanning paused
+- **Network:** the game's packets marked as high priority, TCP tuned for latency, and Wi-Fi background scanning paused
 - **GPU:** NVIDIA Low Latency and AMD Anti-Lag, GPU priority, and windowed game optimizations
 - **System:** apps you pick get closed (and reopened afterwards), Xbox Game Bar capture and services like Windows Search are paused, and the Ultimate Performance power plan is turned on
 
 <p align="center">
-  <img src="images/tweaks.png" alt="The Tweaks page: built-in presets Safe, Balanced and Aggressive, a custom Streaming preset, and the CPU and Memory tweaks with their switches" width="820">
+  <img src="images/tweaks.png" alt="The Tweaks page: the While playing / Always on switch, the Recommended preset picked for this PC next to Safe, Balanced, Aggressive and a custom Streaming preset, and the CPU and Memory tweaks with their switches" width="820">
 </p>
 
 ## Features
 
-- **Presets:** Safe, Balanced and Aggressive, or make your own. Any game can use its own preset, or force single tweaks on or off.
+- **Presets:** Recommended is picked for your PC from its hardware (cores, RAM, CPU and GPU type, laptop or desktop, and more), and **Why?** lists every choice it made. Or use Safe, Balanced or Aggressive, or make your own. Any game can use its own preset, or force single tweaks on or off.
 - **Finds your games:** imports what you have installed on Steam, Epic, GOG, Xbox, Riot, Battle.net, EA, Ubisoft and Rockstar, and can spot new games as you play them.
 - **Measures your FPS:** average FPS and 1% lows for every session, with a history and an FPS trend for each game.
 - **Find my best preset:** plays your next few sessions of a game on different presets and keeps the one with the best 1% lows.
-- **System checks:** flags things that cost FPS all the time, like RAM running below its rated speed (XMP / EXPO off), with one-click fixes you can undo.
+- **System checks:** flags things that cost FPS all the time, like RAM running below its rated speed (XMP / EXPO off) or download speed left throttled by another tweak tool, with one-click fixes you can undo.
+- **Always on:** 25 settings you can keep on for your whole PC, game or not. **Performance:** a performance power plan, network and USB power saving off, memory compression off, no animations or transparency, fast startup off. **Gaming:** mouse acceleration off, no Sticky Keys pop-up, End task on the taskbar, no surprise restarts after updates, Game Bar capture off. **Windows clean-up:** telemetry and ads, tips, Copilot, Recall, widgets and Bing in search off. Each one saves what it changed, so turning it off puts your PC back exactly.
+- **Help when something goes wrong:** if your PC freezes during or right after a game, Optimizer tells you next time and suggests the Safe preset. Each game also lists the stutter causes no Windows setting can fix, like shader compiling or an uncapped frame rate.
 - **Several games at once:** a second game that starts mid-session gets optimized too.
 - **Panic button:** <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> reverts everything instantly.
 - **Make it yours:** themes, accent colors, fonts and layout options.
@@ -52,16 +54,17 @@ There are 43 tweaks, and every one explains what it does for performance and wha
 - **Everything goes back.** Each change is undone when the game closes or you quit, and checked afterwards.
 - **Crashes and power cuts are covered.** Before changing a setting, Optimizer saves what it was. If your PC crashes or loses power mid-game, it puts everything back the next time it starts.
 - **It never touches your games.** No game files are changed and nothing is injected into a game. Optimizer only changes Windows settings and process priorities.
-- **Nothing is sent without you.** It checks GitHub for updates. Feedback and crash reports are only sent when you click Send.
+- **Nothing is sent without you.** It checks GitHub for updates. Feedback and crash reports are only sent when you click Send. No tracking, nothing in the background, and it never opens a port.
+- **Offline mode.** One setting stops every connection. **Strict** also adds a Windows Firewall rule that blocks Optimizer, so Windows itself enforces it.
 
 ## Getting started
 
 1. [Download `optimizer.exe`](https://github.com/passmedaoxy/optimizer/releases/latest/download/optimizer.exe) and run it. Windows asks for administrator rights: Optimizer needs them to change system settings.
 2. Add your games: **Games → Import games** finds the ones you have installed, or **Add game** for any other.
-3. Pick a preset on the Overview page. **Balanced** is a good place to start.
+3. Pick a preset on the Overview page. **Recommended**, the default, is picked for your PC.
 4. Play. Optimizer does the rest.
 
-Optimizer updates itself from the About page when a new version is out. Your settings live in `%LOCALAPPDATA%\Optimizer`. To remove it completely, type `uninstall` on the Output page: it undoes everything, including the System checks fixes, and deletes its files.
+Optimizer updates itself from the About page when a new version is out. Your settings live in `%LOCALAPPDATA%\Optimizer`. To remove it completely, type `uninstall` on the Output page: it undoes everything, including the System checks fixes and Always on settings, and deletes its files.
 
 **Requirements:** Windows 10 or 11, 64-bit. An NVIDIA or AMD graphics card is only needed for the GPU-specific tweaks.
 
@@ -75,7 +78,7 @@ Found a bug or have an idea? Use the **Feedback** page in the app, or [open an i
 
 ## History
 
-Optimizer started in January 2026 as a little Python script I made for myself, became something my friends used, got rewritten in C++, and turned into the app it is now. The old builds and the full story are on the [archive branch](https://github.com/passmedaoxy/optimizer/tree/archive).
+Optimizer started in January 2026 as a little Python script I made for myself, became something my friends used, got rewritten in C++, and turned into the app it is now. The old builds and the full story are in the [archive](https://github.com/passmedaoxy/optimizer-archive).
 
 ## Credits
 
